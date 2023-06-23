@@ -1,0 +1,74 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+HTTP1.1
+
+
+1. It works on the textual format.
+2. There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+3. It uses requests resource Inlining for use getting multiple pages.
+4. It compresses data by itself.
+
+
+
+HTTP2
+
+
+1. It works on the binary protocol.
+2. It allows multiplexing so one TCP connection is required for multiple requests.
+3. It uses PUSH frame by server that collects all multiple pages.
+4. It uses HPACK for data compression.
+
+
+
+2. Write a blog about objects and its internal representation in Javascript
+
+
+Objects in JavaScript
+
+Objects are one of the most important data types in JavaScript. They are used to represent real-world things and concepts, such as cars, people, and websites. Objects can have properties, which are named values that store data about the object. They can also have methods, which are functions that are associated with the object.
+
+Internal Representation of Objects
+
+Objects are represented in JavaScript as a hash table. A hash table is a data structure that maps keys to values. In the case of JavaScript objects, the keys are the property names and the values are the property values. The hash table is stored in memory, and each object has its own unique location in memory.
+
+Creating Objects
+
+There are two ways to create objects in JavaScript. The first way is to use the new keyword. The new keyword creates a new object and returns a reference to it. The second way to create objects is to use the Object constructor. The Object constructor creates a new object and returns a reference to it.
+
+
+
+Accessing Object Properties
+
+Object properties can be accessed using the dot notation. For example, the following code accesses the name property of the person object:
+
+var person = new Object();
+person.name = "John Doe";
+
+console.log(person.name); // "John Doe"
+
+
+
+Methods in Objects
+
+Objects can also have methods. Methods are functions that are associated with an object. Methods can be called using the dot notation. For example, the following code calls the greet() method of the person object:
+
+var person = new Object();
+person.greet = function() {
+  console.log("Hello, my name is " + this.name);
+};
+
+person.greet(); // "Hello, my name is John Doe"
+
+
+
+
+
+
+
+
+
+
+
+
+
