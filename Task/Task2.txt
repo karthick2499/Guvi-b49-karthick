@@ -1,0 +1,30 @@
+1. Write a blog on the difference between document & window objects
+
+Document object:
+
+The document object represents the web page or document currently loaded in the browser window. It serves as an interface to interact with the content within the page. The document object provides a range of properties, methods, and events that allow developers to manipulate the elements, style, and structure of the page dynamically.
+
+
+1. Accessing Elements: 
+The document object allows developers to select and manipulate elements within the HTML document using various methods such as getElementById, getElementsByClassName, or querySelector.
+
+2. Manipulating Content: 
+Developers can modify the content of elements using properties like innerHTML and textContent. These properties enable updating the text, HTML, or XML content of elements dynamically.
+
+3.Modifying Styles: 
+The document object provides methods to alter the style and appearance of elements. By accessing the style property of an element, developers can change properties like color, font-size, or display to control the visual representation of elements.
+
+
+Window object:
+
+The window object represents the browser window or tab in which the web page is loaded. It acts as a global object, containing properties and methods that provide access to various aspects of the browser environment.
+
+1. Global Scope: Variables and functions defined in the global scope are attached to the window object. For example, if you declare a global variable var x = 10;, it becomes accessible as window.x or simply x.
+
+2. Navigation and Location: The window object enables control over the browser's location and navigation. Properties like window.location.href provide information about the current URL or allow for redirection to a new URL.
+
+3.Window Size and Position: The window object offers properties to retrieve and modify the window's size and position on the screen. For instance, window.innerWidth and window.innerHeight provide the width and height of the viewport.
+
+
+
+
