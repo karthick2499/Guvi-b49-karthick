@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+    //your JS code goes here
+
+let obj1 = { name: "Person 1", age:5};
+let obj2 = { age:5, name: "Person 1"};
+
+
+function compareJSON(obj1, obj2) {
+ 
+  
+  //Step 2 : compare the no of properties
+  if(Object.keys(obj1).length != Object.keys(obj2).length) {
+    return false;
+  }
+  
+  //Step 3 : Compare the actual properties
+  for(let key in obj1) {
+    if(!obj2.hasOwnProperty(key) || obj1[key] !== obj2[key]) {
+      return false;
+    }
+  }
+  return true;
+  
+}
+
+var result = compareJSON(obj1, obj2);
+console.log(result);
+
+    </script>
+  </body>
+</html>
