@@ -1,0 +1,74 @@
+d.Return all the prime numbers in an array
+
+//Anonymous Function
+let anon = function() {
+  
+let count=0
+let i,j 
+for(j=2;j<=10;j++)
+{
+for( i=1;i<=j;i++)
+{
+  if(j%i==0)
+  count++
+  
+}
+
+if(count==2)
+
+console.log(j)
+count=0 
+}
+
+}
+anon();
+
+
+
+//IIFE Function
+let iife = (function() {
+  
+let count=0
+let i,j 
+for(j=2;j<=10;j++)
+{
+for( i=1;i<=j;i++)
+{
+  if(j%i==0)
+  count++
+  
+}
+
+if(count==2)
+
+console.log(j)
+count=0 
+}
+
+}
+)();
+
+
+
+//Arrow Function
+let arrow = () => {
+  
+let count=0
+let i,j 
+for(j=2;j<=10;j++)
+{
+for( i=1;i<=j;i++)
+{
+  if(j%i==0)
+  count++
+  
+}
+
+if(count==2)
+
+console.log(j)
+count=0 
+}
+
+}
+arrow();

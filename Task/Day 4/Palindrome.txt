@@ -1,0 +1,51 @@
+e.Return all the palindromes in an array
+
+
+//Anonymous Function
+const arr = ['mom', 'dad', 'abcde', 'leo', 'disk'];
+
+let anon = function(arr) {
+  return arr.filter((curr, idx, arr) => {
+    const splitArr = curr.split('');
+    const reversedString = splitArr.reduceRight((prev, curr) => ( prev + curr ), '');
+    if (curr === reversedString) return curr;
+  })
+}
+console.log(anon(arr));
+
+
+
+
+
+
+//IIFE Function
+let iife = (function() {
+  const arr = ['mom', 'dad', 'abcde', 'leo', 'disk'];
+  return arr.filter((curr, idx, arr) => {
+    const splitArr = curr.split('');
+    const reversedString = splitArr.reduceRight((prev, curr) => ( prev + curr ), '');
+    if (curr === reversedString) return curr;
+  })
+  console.log(arr);
+}
+)();
+
+
+
+
+//Arrow Function
+const arr = ['mom', 'dad', 'abcde', 'leo', 'disk'];
+
+let arrow = (arr) => {
+  return arr.filter((curr, idx, arr) => {
+    const splitArr = curr.split('');
+    const reversedString = splitArr.reduceRight((prev, curr) => ( prev + curr ), '');
+    if (curr === reversedString) return curr;
+  })
+}
+console.log(arrow(arr));
+
+
+
+
+

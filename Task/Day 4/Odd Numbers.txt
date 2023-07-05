@@ -1,0 +1,54 @@
+Do the below programs in anonymous function,IIFE & arrow functions
+
+a.Print odd numbers in an array 
+
+//Anonymous Function
+let anon = function() {
+    let arr=[1,2,3,4,5];
+    
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i]);
+        }
+    }
+}
+
+anon();
+
+
+//IIFE Function
+
+let iife = (function() {
+    let arr=[1,2,3,4,5];
+    
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i]);
+        }
+    }
+}
+
+)();
+
+
+
+//Arrow Function
+
+
+
+let arrow = () => {
+    
+    let arr=[1,2,3,4,5];
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2!==0){
+            console.log(arr[i]);
+        }
+    }
+}
+arrow();
+
+
+
+
+
+

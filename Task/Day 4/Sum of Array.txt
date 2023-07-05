@@ -1,0 +1,46 @@
+c.Sum of all numbers in an array
+
+
+//Anonymous Function
+let anon = function() {
+    let arr=[1,2,3,4,5];
+    let sum = 0;
+    for(let i=0;i<arr.length;i++){
+        
+        
+        sum+=arr[i];
+    }
+    console.log(sum);
+}
+
+anon();
+
+
+//IIFE Function
+let iife = (function() {
+    let arr=[1,2,3,4,5];
+    let sum = 0;
+    for(let i=0;i<arr.length;i++){
+        
+        
+        sum+=arr[i];
+    }
+    console.log(sum);
+}
+
+)();
+
+
+//Arrow Function
+let arrow = () => {
+    let arr=[1,2,3,4,5];
+    let sum = 0;
+    for(let i=0;i<arr.length;i++){
+        
+        
+        sum+=arr[i];
+    }
+    console.log(sum);
+}
+
+arrow();

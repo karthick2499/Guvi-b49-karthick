@@ -1,0 +1,35 @@
+b. Convert all the strings to title caps in a string array
+
+//Anonymous Function
+let anon = function(str) {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+    }
+console.log(anon("LEO MESSI"));
+
+
+
+//IIFE Function
+let iife = (function() {
+    let str="LEO MESSI";
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    } 
+    console.log(str.join(' '));
+    }
+)();
+
+
+//Arrow Function
+let arrow = (str) => {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' ');
+    }
+console.log(arrow("LEO MESSI"));

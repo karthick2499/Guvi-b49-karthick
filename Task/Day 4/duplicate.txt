@@ -1,0 +1,27 @@
+
+g.Remove duplicates from an array
+
+
+//Anonymous Function
+let chars = ['A', 'B', 'A', 'C', 'B'];
+let anon=function() {
+let duplicate = chars.filter((c, index) => {
+    return chars.indexOf(c) !== index;
+});
+
+console.log(duplicate);
+}
+anon();
+
+
+
+//IIFE Function
+let chars = ['A', 'B', 'A', 'C', 'B'];
+let iife=(function() {
+let duplicate = chars.filter((c, index) => {
+    return chars.indexOf(c) !== index;
+});
+
+console.log(duplicate);
+}
+)();
