@@ -1,0 +1,44 @@
+let myResume={
+    "basics": {
+      "name": "KARTHICK S",
+      "email": "karthickms2499@gamil.com",
+      "phone": 9445553616,
+      "degree": "B.E",
+      "location": {
+        "address": "6/12 Rajiv Gandhi St WestBanuNagar",
+        "postalCode": 600053,
+        "city": "Chennai",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+    "education": [
+      {
+        "institution": "St Peter's College of Engineering and Technology",
+        "department": "Computer Science",
+        "studyType": "fulltime",
+        "batch start year": 2016,
+        "batch end year": 2020,
+        "gpa": 7.1,
+      }
+    ],
+    "skills": [
+      {
+        "name": "C,C++,java,javascript,Sql",
+        "level": "beginer",
+        "project": [
+          "Smart luggage tracking using Arduino"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,English",
+      }
+    ],
+    "interests": [
+      {
+        "name": "Listen to music, Watching movies",
+      }
+    ]
+  }
+  console.log(myResume);
