@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f9e7a54a9.js" crossorigin="anonymous"></script>
+
+    <style>
+        .checked {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="container-fluid m-2">
+                <label for="name"><strong>Name</strong></label>
+                <span style="color: red;">*</span> <br>
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <input class="container" type="text" required><br><span class="fs-6">First</span>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <input class="container" type="text" required><br><span class="fs-6">Last</span>
+                    </div>
+                    <div class="row">
+                        <label for="email"><strong>Email</strong>
+                            <span style="color: red;">*</span></label>
+                    </div>
+                    <div><input class="container" type="email" required></div>
+                    <div class="row mt-1">
+                        <label for="experience"><strong>Your Experience</strong>
+                            <span style="color: red;">*</span></label>
+                    </div>
+                    <div class="container d-flex mt-200">
+                        <div class="row">
+                            <div class="col-md-12 star">
+                                <form action="">
+
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="ex-font">Overall,how would you rate you experience with us?</p>
+                    </div>
+                    <div class="row">
+                        <label class="mt-0" for="text"><strong>How satisfied are you with</strong>
+                            <span style="color: red;">*</span></label>
+                    </div>
+                    <div
+                        class="row table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl table-responsive-xxl">
+                        <table class="table table-borderless table table-striped ex-font mt-0 pt-0">
+                            <thead class="">
+                                <tr>
+                                    <td scope="col">
+                                        </th>
+                                    <td scope="col">Very Unsatisfied</th>
+                                    <td scope="col">Unsatisfied</th>
+                                    <td scope="col">Neutral</th>
+                                    <td scope="col">Satisfied</th>
+                                    <td scope="col">Very Satisfied</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row ">Purchase</th>
+                                    <td><input type="radio" id="Very Unsatisfied" name="purchase-rating"></td>
+                                    <td><input type="radio" id=" Unsatisfied" name="purchase-rating"></td>
+                                    <td><input type="radio" id=" Neutral" name="purchase-rating"></td>
+                                    <td><input type="radio" id=" satisfied" name="purchase-rating"></td>
+                                    <td><input type="radio" id="Very satisfied" name="purchase-rating"></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row ">Service</th>
+                                    <td><input type="radio" id="Very Unsatisfied" name="service-rating"></td>
+                                    <td><input type="radio" id=" Unsatisfied" name="service-rating"></td>
+                                    <td><input type="radio" id=" Neutral" name="service-rating"></td>
+                                    <td><input type="radio" id=" satisfied" name="service-rating"></td>
+                                    <td><input type="radio" id="Very satisfied" name="service-rating"></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row ">Company Overall</th>
+                                    <td><input type="radio" id="Very Unsatisfied" name="company-rating"></td>
+                                    <td><input type="radio" id=" Unsatisfied" name="company-rating"></td>
+                                    <td><input type="radio" id=" Neutral" name="company-rating"></td>
+                                    <td><input type="radio" id=" satisfied" name="company-rating"></td>
+                                    <td><input type="radio" id="Very satisfied" name="company-rating"></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td scope="row" class="trans "><strong>How likely are you to</strong>
+                                        <span style="color: red;">*</span>
+                                    </td>
+                                </tr>
+
+                                <thead>
+                                    <tr>
+                                        <td scope="col">
+                                            </th>
+                                        <td scope="col">Very Unlikely</th>
+                                        <td scope="col">Unlikely</th>
+                                        <td scope="col">Neutral</th>
+                                        <td scope="col">Likely</th>
+                                        <td scope="col">Very Likely</th>
+                                    </tr>
+                                </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row ">Buy from us again</th>
+                                    <td><input type="radio" id="Very Unlikely" name="buy-rating"></td>
+                                    <td><input type="radio" id=" Unlikely" name="buy-rating"></td>
+                                    <td><input type="radio" id=" Neutral" name="buy-rating"></td>
+                                    <td><input type="radio" id=" Likely" name="buy-rating"></td>
+                                    <td><input type="radio" id="Very Likely" name="buy-rating"></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row ">Recommend our products to others</th>
+                                    <td><input type="radio" id="Very Unlikely" name="product-rating"></td>
+                                    <td><input type="radio" id=" Unlikely" name="product-rating"></td>
+                                    <td><input type="radio" id=" Neutral" name="product-rating"></td>
+                                    <td><input type="radio" id=" Likely" name="product-rating"></td>
+                                    <td><input type="radio" id="Very Likely" name="product-rating"></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row ">Recommend our company to others</th>
+                                    <td><input type="radio" id="Very Unlikely" name="recommend-rating"></td>
+                                    <td><input type="radio" id=" Unlikely" name="recommend-rating"></td>
+                                    <td><input type="radio" id=" Neutral" name="recommend-rating"></td>
+                                    <td><input type="radio" id=" Likely" name="recommend-rating"></td>
+                                    <td><input type="radio" id="Very Likely" name="recommend-rating"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <label class="mt-0 pt-0" for="text"><strong>Additional comments or suggestions</strong>
+                                <span style="color: red;">*</span></label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div>
+                            <button class="ex-font btn btn-primary mt-2" required>Submit</button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
