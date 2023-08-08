@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <div class="container">
+      <form id="myform">
+        <label for="fname">FirstName:</label>
+        <input id="fname" type="text" />
+
+        <label for="lname">LastName:</label>
+        <input id="lname" type="text" />
+
+        <label for="address">Address</label>
+        <input id="address" type="text" />
+
+        <label for="pincode">Pincode</label>
+        <input id="pincode" type="text" />
+
+        <label for="state">State:</label>
+        <input id="state" type="text" />
+
+        <label for="country">country:</label>
+        <input id="country" type="text" />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+
+        <div class="food">
+          <label>Choice of food: </label>
+          <input type="checkbox" name="food" value="Pizza" /> Pizza
+          <input type="checkbox" name="food" value="Burger" /> Burger
+          <input type="checkbox" name="food" value="Pasta" /> Pasta
+          <input type="checkbox" name="food" value="Sushi" /> Sushi
+          <input type="checkbox" name="food" value="Salad" /> Salad
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>State</th>
+            <th>country</th>
+            <th>Food</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
