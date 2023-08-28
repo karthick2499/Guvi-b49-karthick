@@ -1,37 +1,49 @@
-var countdown=document.createElement("div");
-countdown.className="main";
+var b =document.getElementById('hell');
+let a  = () => {
+b.innerText = '10';
+   setTimeout( ()=>{
+    b.innerText = '9'
+    setTimeout( () =>{
+        b.innerText = '8'
+        setTimeout( ()=>{
+            b.innerText = '7'
+            setTimeout( ()=>{
+                b.innerText = '6'
+                setTimeout( ()=>{
+                    b.innerText = '5'
+                    setTimeout( ()=>{
+                       b.innerText = '4'
+                            setTimeout( () =>{
+                               b.innerText = '3'
+                                    setTimeout( () => {
+                                       b.innerText = '2'
+                                            setTimeout( () => {
+                                               b.innerText = '1'
+                                                   setTimeout( () => {
+                                                      b.innerText = 'Happy Independence Day'
 
-setTimeout(()=>{
-    countdown.innerText="10";
-},1000);
-setTimeout(()=>{
-    countdown.innerText="9"; 
-},2000);  
-setTimeout(()=>{
-    countdown.innerText="8"; 
-},3000);  
-setTimeout(()=>{
-    countdown.innerText="7"; 
-},4000);  
-setTimeout(()=>{
-    countdown.innerText="6"; 
-},5000);  
-setTimeout(()=>{
-    countdown.innerText="5"; 
-},6000);  
-setTimeout(()=>{
-    countdown.innerText="4"; 
-},7000); 
-setTimeout(()=>{
-    countdown.innerText="3"; 
-},8000); 
-setTimeout(()=>{
-    countdown.innerText="2"; 
-},9000); 
-setTimeout(()=>{
-    countdown.innerText="1"; 
-},10_000); 
-setTimeout(()=>{
-    countdown.innerText="Happy Independence Day";
-},11_000);
-document.body.appendChild(countdown);
+                                                },1000)
+
+                                        },1000)
+                                                 
+                                 },1000)
+                                
+                            },1000)
+                                           
+                        },1000)
+
+                    },1000)
+                
+                },1000)
+          
+            },1000)
+                
+        },1000)
+    
+    },1000);
+
+}
+
+
+window.onload = a();
+
