@@ -1,0 +1,8 @@
+.container-fluid {
+  width: 600px;
+}
+body {
+  background-image: url("https://images.alphacoders.com/236/236101.jpg");
+
+  background-size: cover;
+}
