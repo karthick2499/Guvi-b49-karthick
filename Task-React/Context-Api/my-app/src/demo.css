@@ -1,0 +1,38 @@
+.card{
+    padding: 0%;
+    height: 460px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.card-img{
+    height: 200px;
+}
+
+.brand{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-body{
+    text-align: left;
+}
+#card-value{
+    width: 30px;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn{
+    padding: 5px;
+}
+.price{
+    font-weight: bold;
+}
+.des{
+    font-size: 13px;
+}
