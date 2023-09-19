@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            border: 1px solid black;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .item{
+            border: 1px solid black;
+            background-color: brown;
+            color: white;
+        }
+        .flex-container{
+            display: flex;
+            flex-flow: column wrap;
+            align-content: end;
+            border: 1px solid black;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        .flex-item{
+            flex: 1 0 auto;
+            margin: 10px;
+            border: 1px solid black;
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Grid Demo</h1>
+    <div class="container">
+        <div class="item" style="grid-column: 3; grid-row: 2;">Messi</div>
+        <div class="item" style="grid-column: 2; grid-row: 2;">CR7</div>
+        <div class="item">Leo</div>
+        <div class="item">pepe</div>
+        <div class="item">Ramos</div>
+        <div class="item">hazard</div>
+    </div>
+
+    <h1> Flex Demo </h1>
+    <div class="flex-container">
+        <div class="flex-item" >ABD</div>
+        <div class="flex-item" >MSD</div>
+        <div class="flex-item" >VK</div>
+        <div class="flex-item" >VIV</div>
+        <div class="flex-item" >Lee</div>
+        <div class="flex-item" >Warne</div>
+    </div>
+    
+</body>
+</html>
