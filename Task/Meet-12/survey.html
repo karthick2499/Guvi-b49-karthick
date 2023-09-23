@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <style>
+    /* CSS styles (same as before) */
+  </style>
+</head>
+<body>
+  <div class="survey-form">
+    
+    <form>
+      <div class="form-group">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" >
+        
+      </div>
+
+      <div class="form-group">
+        <label for="lname">Name:</label>
+        <input type="text" id="lname" name="lname" >
+      </div>
+
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" >
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rate your experience (1 to 5):</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select rating</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="subscribe">Subscribe to our newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+      </div>
+
+      <!-- Additional questions -->
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+
+      <div class="form-group">
+        <label for="education">Education:</label>
+        <select id="education" name="education" required>
+          <option value="">Select education level</option>
+          <option value="high-school">High School</option>
+          <option value="college">College</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="master">Master's Degree</option>
+          <option value="doctorate">Doctorate Degree</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="interests">Interests (select multiple):</label>
+        <select id="interests" name="interests[]" multiple required>
+          <option value="sports">Sports</option>
+          <option value="music">Music</option>
+          <option value="reading">Reading</option>
+          <option value="travel">Travel</option>
+          <option value="cooking">Cooking</option>
+          <option value="gaming">Gaming</option>
+          <option value="art">Art</option>
+          <option value="technology">Technology</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="how-hear">How did you hear about us?</label>
+        <input type="text" id="how-hear" name="how_hear" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -5,7 +5,7 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   debugger;
   const fname = document.getElementById("fname").value;
-  const lname = document.getElementById("lname").value;
+  var lastName = document.getElementById('last-name').value;
   const address = document.getElementById("address").value;
   const pincode = document.getElementById("pincode").value;
   const gender = document.querySelector('input[name="gender"]:checked').value;
@@ -36,7 +36,7 @@ form.addEventListener("submit", function (event) {
 
 
   fnameCol.textContent = fname;
-  lnameCol.textContent = lname;
+  lnameCol.textContent = lastName;
   addressCol.textContent = address;
   pincodeCol.textContent = pincode;
   genderCol.textContent = gender;

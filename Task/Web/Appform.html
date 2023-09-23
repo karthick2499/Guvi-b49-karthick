@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<style>
+    #doc{
+        background-color: yellowgreen;
+    }
+    label{
+        color:aqua ;
+    }
+    input{
+        color: aquamarine;
+        background-color: blue;
+    }
+</style>
+
+
+<body style="background-color: yellow;">
+    <h1 style="color: brown; font-size: 30px;">Application Form</h1>
+<form>
+    <label for="name">Name:</label>
+    <input id="name" type="text" value="Leo"/>
+    <br />
+    <br />
+    <label for="email">Email:</label>
+    <input id="email" type="email"/>
+    <br />
+    <br />
+    <label for="dob">DOB:</label>
+    <input id="dob" type="date"/>
+    <br />
+    <br />
+    <label for="gender">Gender:</label>
+    <input id="male" type="radio" name="gender"/> <label>Male</label>
+    <input id="female" type="radio" name="gender"/> <label>Female</label>
+    <br />
+    <br />
+    <label for="city">City:</label>
+    <select>
+        <option>Chennai</option>
+        <option>Trichy</option>
+        <option>Salem</option>
+    </select>
+    <br />
+    <br />
+    <label for="doc">Doc:</label>
+    <input id="doc" type="file"/>
+    <br />
+    <br />
+    <input id="submit" type="submit" value="Save"/>
+    <input id="cancel" type="button" value="Cancel" />
+
+</form>
+
+    
+</body>
+</html>

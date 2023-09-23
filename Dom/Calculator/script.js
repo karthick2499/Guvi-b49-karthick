@@ -1,4 +1,5 @@
 let div = document.createElement("div");
+
 div.innerHTML =
  `<div class="container">
  <div class="calculator">
@@ -24,7 +25,11 @@ div.innerHTML =
      <button onclick="Calculate()"  class="equal">=</button>
  </div>
 </div>`
+
+var description = document.getElementById('description');
+
 document.body.append(div);
+
 let outputScreen = document.getElementById("output-screen");
 
 function display(num){
