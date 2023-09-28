@@ -1,0 +1,17 @@
+
+API:
+
+1. http://localhost:3000/getFiles
+
+2. http://localhost:3000/createFile
+
+
+
+
+
+Render:
+
+
+1.  https://b49.onrender.com/getFiles
+
+2.  https://b49.onrender.com/createFile
