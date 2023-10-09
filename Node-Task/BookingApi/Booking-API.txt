@@ -1,0 +1,3 @@
+1.https://booking-api-dhws.onrender.com/listCustomer
+
+2.https://booking-api-dhws.onrender.com/listRooms
